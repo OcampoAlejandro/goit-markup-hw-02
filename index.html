@@ -5,30 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="ccs/styles.css" />
+    <link href="
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wgth@700&dispay=swap"
-      rel="styleshe"
-    />
-    <link
-      href="https//fonts.googleapis.com/css2?family=Roboto:wgth@400;500;700;900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital@1&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https//fonts.googleapis.com/css2?family=Roboto:wgth@400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="" />
+    <!-- <link rel="stylesheet" href="ccs/modern-normalize.css" /> -->
     <title>Webstudio</title>
   </head>
   <body>
     <header>
-      <a class="logo" href="#">Webstudio</a>
-      <nav>
-        <ul>
-          <li><a class="headers current" href="./index.html">Estudio</a></li>
-          <li><a class="headers" href="./portafolio.html">portafolio</a></li>
-          <li><a class="headers" href="./index.html">contacto</a></li>
+      <div class="container header-flex">
+        <a class="logo" href="#">Webstudio</a>
+        <nav>
+          <ul class="nav-menu">
+            <li><a class="headers current" href="./index.html">Estudio</a></li>
+            <li><a class="headers" href="./portafolio.html">portafolio</a></li>
+            <li><a class="headers" href="./index.html">contacto</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li><a class="contact-item" href="#">info@devtudio.com</a></li>
+          <li><a class="contact-item" href="#">+525555296000</a></li>
         </ul>
-      </nav>
-      <ul class="contact">
-        <li><a class="contact-item" href="#">info@devtudio.com</a></li>
-        <li><a class="contact-item" href="#">+525555296000</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -37,127 +43,147 @@
           Solicite nuestro servicio
         </button>
       </section>
-      <section class="benefits">
-        <ul>
-          <li>
-            <h3 class="benefits-title">Atencion a los detalles</h3>
-            <p class="benefits-description">
-              Nos adentramos en todos los detalles y procesos de su negocio,para
-              asi desarrollar una solucion a su medida.
-            </p>
-          </li>
-          <li>
-            <h3 class="benefits-title">Puntualidad</h3>
-            <p class="benefits-description">
-              Con nosotros, usted puede sentirse seguro y protegido. Un
-              principio importante de la empresa: respetar su tiempo y respetar
-              los plazos acordados.
-            </p>
-          </li>
-          <li>
-            <h3 class="benefits-title">Planificacion</h3>
-            <p class="benefits-description">
-              Usted podrá observar y participar en cada fase del desarrollo y
-              aplicación de soluciones.
-            </p>
-          </li>
-          <li>
-            <h3 class="benefits-title">tecnologia moderna</h3>
-            <p class="benefits-description">
-              Usamos herramientas innovadoras para resolver las tareas
-              asignadas. Es hora de simplificar los procesos laborales.
-            </p>
-          </li>
-        </ul>
+      <section class="benefits section">
+        <div class="container">
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <h3 class="benefits-title">Atencion a los detalles</h3>
+              <p class="benefits-description">
+                Nos adentramos en todos los detalles y procesos de su
+                negocio,para asi desarrollar una solucion a su medida.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title">Puntualidad</h3>
+              <p class="benefits-description">
+                Con nosotros, usted puede sentirse seguro y protegido. Un
+                principio importante de la empresa: respetar su tiempo y
+                respetar los plazos acordados.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title">Planificacion</h3>
+              <p class="benefits-description">
+                Usted podrá observar y participar en cada fase del desarrollo y
+                aplicación de soluciones.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title">tecnologia moderna</h3>
+              <p class="benefits-description">
+                Usamos herramientas innovadoras para resolver las tareas
+                asignadas. Es hora de simplificar los procesos laborales.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="what-we">
+      <section class="what-we section">
         <h2 class="subtitle">A que nos dedicamos</h2>
-        <ul>
-          <li>
-            <img
-              src="images/computadoryipad.jpg"
-              alt="Conputador y ipap"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/potatil1.jpg"
-              alt="portatil encendido"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/ipad.jpg"
-              alt="tablet encendido"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="what-list">
+            <li class="what-item">
+              <img
+                src="images/computadoryipad.jpg"
+                alt="Conputador y ipap"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="what-item">
+              <img
+                src="images/potatil1.jpg"
+                alt="portatil encendido"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="what-item">
+              <img
+                src="images/ipad.jpg"
+                alt="tablet encendido"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="gallery">
+      <section class="gallery section">
         <h2 class="subtitle">Nuestro equipo</h2>
-        <ul>
-          <li>
-            <img
-              src="images/AndresCubo.jpg"
-              alt="hombresonrriendo"
-              width="270"
-              height="260"
-            />
-            <h3 class="gallery-title">Andres Cubo</h3>
-            <p class="gallery-description">Diseñador de productos</p>
-          </li>
-          <li>
-            <img
-              src="images/CarlaPalacios.jpg"
-              alt="mujersonrriendo"
-              width="270"
-              height="260"
-            />
-            <h3 class="gallery-title">Carla Palacios</h3>
-            <p class="gallery-description">Desarrolladora frontend</p>
-          </li>
-          <li>
-            <img
-              src="images/MarioDorado.jpg"
-              alt="hombresonrriendo"
-              width="270"
-              height="260"
-            />
-            <h3>Mario Dorado</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="images/PabloMijangos.jpg"
-              alt="hombresonrriendo"
-              width="270"
-              height="260"
-            />
-            <h3 class="gallery-title">Pablo Mijanos</h3>
-            <p class="gallery-description">Diseñador IU</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img
+                src="images/AndresCubo.jpg"
+                alt="hombresonrriendo"
+                width="270"
+                height="260"
+              />
+              <div class="gallery-staff">
+                <h3 class="gallery-title">Andres Cubo</h3>
+                <p class="gallery-description">Diseñador de productos</p>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/CarlaPalacios.jpg"
+                alt="mujersonrriendo"
+                width="270"
+                height="260"
+              />
+              <div class="gallery-staff">
+                <h3 class="gallery-title">Carla Palacios</h3>
+                <p class="gallery-description">Desarrolladora frontend</p>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/MarioDorado.jpg"
+                alt="hombresonrriendo"
+                width="270"
+                height="260"
+              />
+              <div class="gallery-staff">
+                <h3 class="gallery-title">Mario Dorado</h3>
+                <p class="gallery-description">Marketing</p>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/PabloMijangos.jpg"
+                alt="hombresonrriendo"
+                width="270"
+                height="260"
+              />
+              <div class="gallery-staff">
+                <h3 class="gallery-title">Pablo Mijanos</h3>
+                <p class="gallery-description">Diseñador IU</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="logo" href="./index.html">Web studio</a>
-      <address>
-        <a class="address-title" href="/Calz.ticoman 500,ciudad de mexico"
-          >Claz.ticoman 500,cuidad de maxico</a
-        >
-      </address>
-      <ul>
-        <li>
-          <a class="contact-info" href="/info@example.com">Info@example.com</a>
-        </li>
-        <li><a class="contact-info" href="/+525555296000">+525555296000</a></li>
-      </ul>
+      <div class="container footer-flex">
+        <a class="logo" href="./index.html">Web studio</a>
+        <address>
+          <a class="address-title" href="/Calz.ticoman 500,ciudad de mexico"
+            >Claz.ticoman 500,cuidad de maxico</a
+          >
+        </address>
+        <ul>
+          <li>
+            <a class="contact-info" href="/info@example.com"
+              >Info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="contact-info" href="/+525555296000">+525555296000</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
