@@ -1,8 +1,18 @@
+:root {
+  --container-padding: calc((100% - 1200px) / 2);
+  --primary-text-white: #ffffff;
+  --primary-text-black: #212121;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
+  background-color: var(--primary-text-white);
 }
 a {
   text-decoration: none;
@@ -10,21 +20,60 @@ a {
 li {
   list-style: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .subtitle {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  color: #212121;
+  color: var(--primary-text-black);
+  margin-bottom: 50px;
 }
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 31px;
   color: #2196f3;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 80px;
 }
 .headers .current {
   font-style: normal;
@@ -34,10 +83,11 @@ li {
   color: #2196f3;
 }
 .headers {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
-  color: #212121;
+  color: var(--primary-text-black);
 }
 .headers:hover,
 .headers:focus,
@@ -56,6 +106,8 @@ li {
 }
 .hero {
   background: #2f303a;
+  padding: 200px var(--container-padding);
+  text-align: center;
 }
 
 .hero-title {
@@ -66,6 +118,8 @@ li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  width: 696px;
+  margin: 20px auto;
 }
 .hero-button {
   font-style: normal;
@@ -75,11 +129,25 @@ li {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+  border-radius: 4px;
+  border: none;
+  width: 261px;
+  height: 50px;
+}
+.benefits-list {
+  display: flex;
+  gap: 30px;
+}
+.benefits-item {
+  flex-basis: calc((100% - 120px) / 4);
 }
 .benefits-title {
   font-style: normal;
+  font-family: "Roboto";
   font-weight: 700;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
@@ -89,12 +157,34 @@ li {
   line-height: 1.7;
   color: #757575;
 }
+.what-list {
+  display: flex;
+  gap: 30px;
+}
+.what-item {
+  flex-basis: calc((100% - 90px) / 3);
+}
+.gallery-list {
+  display: flex;
+  gap: 30px;
+}
+.gallery-item {
+  flex-basis: calc((100% - 120px) / 4);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.gallery-staff {
+  padding: 30px 45px;
+}
 .gallery-title {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  color: #212121;
+  color: var(--primary-text-black);
+  text-align: center;
 }
 .gallery-description {
   font-style: normal;
@@ -102,9 +192,22 @@ li {
   font-size: 16px;
   line-height: 1.18;
   color: #757575;
+  text-align: center;
 }
 .footer {
   background: #2f303a;
+}
+.gallery-service {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+.gallery-website {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
 }
 .address-title {
   font-style: normal;
@@ -124,6 +227,13 @@ li {
 .contact-info:focus {
   color: #2196f3;
 }
+.button-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 56px;
+}
 .filter {
   font-style: normal;
   font-weight: 500;
@@ -137,14 +247,22 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  color: #212121;
+  color: var(--primary-text-black);
+}
+.portafolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.porfatolio-item {
+  flex-basis: calc((100% - 90px) / 3);
 }
 .porfatolio-title {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: #212121;
+  color: var(--primary-text-black);
 }
 .portafolio-description {
   font-style: normal;
