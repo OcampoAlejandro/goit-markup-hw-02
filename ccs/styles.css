@@ -200,16 +200,16 @@ ul {
   background: #2f303a;
 }
 .gallery-service {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
+  display: flex;
+  width: 322px;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 .gallery-website {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
+  display: flex;
+  width: 322px;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 .address-title {
   font-style: normal;
@@ -236,22 +236,35 @@ ul {
   gap: 15px;
   margin-bottom: 56px;
 }
+
 .filter {
-  font-style: normal;
-  font-weight: 500;
+  text-align: center;
   font-size: 16px;
-  line-height: 1.6;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  width: 73px;
+  height: 38px;
+  flex-shrink: 0;
+  font-style: normal;
+  border-radius: 4px;
   color: #ffffff;
-  background-color: #2196f3;
+  background: #2196f3;
 }
 .filter-button {
-  .filter-button {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--primary-text-black);
-  }
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  width: 128px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #f5f4fa;
 }
 .pottafolio-list {
   display: flex;
@@ -283,9 +296,9 @@ ul {
   background-color: teal;
   color: white;
   border-radius: 4px;
+  margin-bottom: 10px;
 }
 .portafolio-description {
-  margin-bottom: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
