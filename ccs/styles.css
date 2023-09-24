@@ -31,14 +31,20 @@ ul {
   margin: 0;
   padding: 0;
 }
+.header {
+  height: 80px;
+  flex-shrink: 0;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .container {
   width: 1200px;
-  padding: 0 32px;
+  padding: 15px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .subtitle {
   font-style: normal;
@@ -115,6 +121,7 @@ ul {
   background: #2f303a;
   padding: 200px var(--container-padding);
   text-align: center;
+  height: 600px;
 }
 
 .hero-title {
@@ -135,6 +142,7 @@ ul {
 }
 
 .hero-button {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
